@@ -1,0 +1,67 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.heading {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+.form-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.name {
+  color: var(--font-high, #25282b);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.link {
+  color: var(--font-high, #25282b);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.description {
+  color: var(--font-high, #25282b);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.add-button {
+  align-self: flex-end;
+  color: var(--font-high-emphasis, #25282b);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 8px;
+  background: var(--brand-yellow, #fdc435);
+  border-width: 0px;
+  margin-top: 15px;
+}

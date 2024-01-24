@@ -1,0 +1,19 @@
+.container {
+  width: 1200px;
+  height: 500px;
+  background: var(--bg-gray, #f9faff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.icon {
+  height: 150px;
+  width: 150px;
+}
