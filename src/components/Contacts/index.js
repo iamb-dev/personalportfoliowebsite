@@ -1,12 +1,10 @@
 import {AiFillInstagram} from 'react-icons/ai'
 import {FaLinkedin} from 'react-icons/fa'
 import {BsEnvelopeFill} from 'react-icons/bs'
-import Header from '../Header'
 import './index.css'
 
 const Contacts = () => (
   <>
-    <Header />
     <div className="container">
       <div className="contact-container">
         <AiFillInstagram className="icon" />

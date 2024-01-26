@@ -1,13 +1,37 @@
 import {Component} from 'react'
-import Header from '../Header'
+import Projectslist from '../Projectslist'
 
 import './index.css'
 
 class Projects extends Component {
   state = {
+    projectList: [],
     name: '',
-    link: '',
+    links: '',
     description: '',
+  }
+
+  onAddProject = () => {
+    const {name, links, description} = this.state
+    const newProject = {
+      name,
+      links,
+      description,
+    }
+    this.setState(prevState => ({
+      projectList: [...prevState.projectList, newProject],
+      name: '',
+      links: '',
+      description: '',
+    }))
+  }
+
+  renderProjects = () => {
+    const {projectList} = this.state
+
+    return projectList.map(eachProject => (
+      <Projectslist projectDetails={eachProject} />
+    ))
   }
 
   onChangeName = event => {
@@ -15,7 +39,7 @@ class Projects extends Component {
   }
 
   onChangeLink = event => {
-    this.setState({link: event.target.value})
+    this.setState({links: event.target.value})
   }
 
   onChangeDescription = event => {
@@ -41,17 +65,17 @@ class Projects extends Component {
   }
 
   renderLink = () => {
-    const {link} = this.state
+    const {links} = this.state
     return (
       <>
-        <label className="link" htmlFor="link">
+        <label className="links" htmlFor="links">
           Project Link
         </label>
         <input
-          type="link"
-          id="link"
-          className="link"
-          value={link}
+          type="links"
+          id="links"
+          className="links"
+          value={links}
           onChange={this.onChangeLink}
         />
       </>
@@ -76,12 +100,10 @@ class Projects extends Component {
     )
   }
 
-  onClickAdd = () => {}
-
   render() {
+    const {name, links, description, projectList} = this.state
     return (
       <>
-        <Header />
         <div className="project-container">
           <h1 className="heading">Add Project</h1>
           <form className="form-container">
@@ -91,12 +113,13 @@ class Projects extends Component {
             <button
               type="button"
               className="add-button"
-              onClick={this.onClickAdd()}
+              onClick={this.onAddProject}
             >
               Add
             </button>
           </form>
         </div>
+        <div className="projects-list-container">{this.renderProjects()}</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1436"

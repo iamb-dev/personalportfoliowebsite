@@ -14,7 +14,7 @@
   font-weight: 700;
   line-height: 72px;
 }
-.form-conatiner {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,4 +64,8 @@
   background: var(--brand-yellow, #fdc435);
   border-width: 0px;
   margin-top: 15px;
+}
+.projects-list-container {
+  margin: 0px;
+  padding: 0px;
 }

@@ -1,0 +1,33 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-list {
+  background-color: antiquewhite;
+  border: 2px solid #0c0c0c;
+  border-radius: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.project-heading {
+  color: #000000;
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: bold;
+}
+.project-link {
+  color: #000000;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-description {
+  color: #5f5b5b;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}

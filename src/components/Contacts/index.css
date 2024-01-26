@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 1440px;
   height: 500px;
   background: var(--bg-gray, #f9faff);
   display: flex;
@@ -12,8 +12,10 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  width: 1440px;
+  height: 500px;
 }
 .icon {
-  height: 150px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
 }
